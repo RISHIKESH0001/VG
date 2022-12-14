@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK's Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/main.js"></script>
+    <style>
+        .btn:hover{
+            color: rgb(239, 85, 116);
+            transform: scale(2);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body class="bg-black" style="color: azure;">
+<div class="container-fluid">
+    <div class="row justify-content-start">
+    <!-- leftbar starts here -->
+    <div class="col-3 border border-2 border-success bg-black">
+        <span id="time" class="sticky-top position-sticky text-bg-dark"></span>
+        <ul type="none" class="px-3 pb-5">
+            <li class="py-xxl-4"><img src="https://tse1.mm.bing.net/th?id=OIP.4aCY8KQEJPSgowQ4X6Pm3gHaHa&pid=Api&P=0" alt="" class="rounded-circle img-thumbnail">
+            </li>
+            <li class="py-xxl-4"><a href="home.html"><button type="button" class="btn bg-light btn-outline-primary mx-4">HOME</button></a>
+            </li>
+            <li class="py-xxl-4"><button onclick="changeIframe('library.html')" type="button" class="btn bg-light btn-outline-primary mx-4">LIBRARY</button></li>
+            <li class="py-xxl-4"><button onclick="changeIframe('favourites.html')" type="button" class="btn bg-light btn-outline-primary mx-4">FAVOURITES</button></li>
+            <li class="py-xxl-4"><button onclick="changeIframe('index.html')" type="button" class="btn bg-light btn-outline-primary mx-4">ACCOUNT</button>
+            </li>
+            <li class="py-xxl-4"><button onclick="changeIframe('settings.html')" type="button" class="btn bg-light btn-outline-primary mx-4">SETTINGS</button>
+            </li>
+            <li class="py-xxl-4"><button onclick="changeIframe('help.html')" class="btn bg-light btn-outline-primary mx-4">HELP</button>
+            </li>
+        </ul>
+        <div class="blockquote-footer"> @Copyright : Rishikesh Chowdhury</div>
+    </div>
+    <!-- Leftbar ends here -->
+    <!-- Display area starts here -->
+    
+    <iframe src="display.html" id="webpage" class="bg-light col-9" frameborder="0"></iframe>
+    <!-- Display area ends here -->
+    
+    </div>
+</div>
+</body>
+</html>
